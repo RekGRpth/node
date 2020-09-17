@@ -166,7 +166,7 @@ def headers(action):
       'deps/v8/include/v8-inspector.h',
       'deps/v8/include/v8-inspector-protocol.h'
     ]
-    files_arg = [name for name in files_arg if name not in inspector_headers]
+    #files_arg = [name for name in files_arg if name not in inspector_headers]
     action(files_arg, dest)
 
   action([
